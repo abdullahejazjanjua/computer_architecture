@@ -12,6 +12,9 @@
 *.map
 *.exp
 
+# MacOs Shit
+.DS_Store
+
 # Precompiled Headers
 *.gch
 *.pch
