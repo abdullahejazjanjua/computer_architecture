@@ -1,0 +1,4 @@
+OS: MacOS Sequoia 15.6.1
+CPU Model: M4
+Cores: 10 core CPU
+Max threads would be 10 as there is no SMT on Apple Silicon Macs
