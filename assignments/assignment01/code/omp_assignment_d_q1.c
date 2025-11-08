@@ -9,7 +9,7 @@ int main(int argc, char **argv)
         fprintf(stderr, "Usage: ./out.exe ARRAY_SIZE NUM_THREADS\n");
         return 1;
     }
-  
+    
     int num_threads = atoi(argv[2]);
     int array_size = atoi(argv[1]);
     int sum = 0;
