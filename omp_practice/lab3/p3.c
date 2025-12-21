@@ -10,7 +10,7 @@ int main()
         #pragma omp single
         {
             printf("Only one thread will execute it (Thread: %d)\n", omp_get_thread_num());
-        } // Remaining threads wait here for above thread to finish
+        } // Wait till all threads are done (implicit barrier)
         printf("This is still executed\n");
     }
 }

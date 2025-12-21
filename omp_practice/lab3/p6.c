@@ -14,7 +14,7 @@ int main()
         #pragma omp single
         {
             sum = summation(A, 10);
-        }
+        } // implicit barrier
     } // <-- All threads join here
     printf("sum: %d\n", sum);
 }
