@@ -83,7 +83,7 @@ int main()
     }
     printf("\n");
 
-    double start = omp_get_wtime();
+    double begin = omp_get_wtime();
     #pragma omp parallel for ordered
     for(int i = 0; i < segment_size; i++)
     {
@@ -101,5 +101,5 @@ int main()
         }
     }
     double end = omp_get_wtime();
-    printf("Time taken: %.6f\n", (end-start));
+    printf("Time taken: %.6f\n", (end-begin));
 }
