@@ -3,7 +3,7 @@
 
 int main()
 {
-    #pragma omp parallel num_threads(20)
+    #pragma omp parallel num_threads(10)
     {
         #pragma omp master
         {
