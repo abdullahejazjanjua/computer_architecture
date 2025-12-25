@@ -20,8 +20,7 @@ int main()
                 A[i] = rand() % SIZE;
             }
         }
-        #pragma omp barrier
-
+ 
         #pragma omp for reduction(min:min) reduction(max:max)
         for(int i = 0; i < SIZE; i++)
         {

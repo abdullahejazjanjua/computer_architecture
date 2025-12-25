@@ -18,6 +18,7 @@ int main()
                 A[i] = (rand() % 100) + 1;
             }
         }
+        
         #pragma omp for
         for(int i = 0; i < N; i++)
         {
