@@ -6,16 +6,20 @@
 
 int main()
 {
-    double start, end, pi = 0.0;
+    double start, end, seq_time, pi;
+    pi = 0.0;
+    
     printf("Serial code:\n");
     start = omp_get_wtime();
     for(int k = 0; k < N; k++)
     {
         pi += pow(-1, k) / (2*k + 1);
     }
+    
     pi *= 4;
     end = omp_get_wtime();
-    double seq_time = end-start;
+    seq_time = end-start;
+    
     printf("pi: %lf\n", pi);
     printf("Time take: %.6f\n\n", seq_time);
 
