@@ -21,7 +21,7 @@ int main()
         #pragma omp for
         for(int i = 0; i < N; i++)
         {
-            sum += A[i];
+            sum += A[i]; // this is a race condition
         }
     }
     printf("sum: %d\n", sum);
